@@ -7,9 +7,17 @@ export default function App() {
   const [number1, setNumber1] = useState(0);
   const [number2, setNumber2] = useState(0);
 
-  const sumNumbers = () => {  setResult(number1 + number2);}
+  const sumNumbers = () => {  
+    setResult(number1 + number2);
+    setNumber1('');
+    setNumber2('');
+  }
 
-  const substractNumbers = () => {  setResult(number1 - number2);}
+  const substractNumbers = () => {  
+    setResult(number1 - number2);
+    setNumber1('');
+    setNumber2('');
+  }
 
   return (
     <View style={styles.container}>
